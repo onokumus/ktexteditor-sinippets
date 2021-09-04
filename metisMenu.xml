@@ -1,0 +1,58 @@
+<snippets authors="Osman Nuri Okumuş" namespace="mm" filetypes="HTML" license="BSD" name="MetisMenu Snippets">
+ <script>function fileName() { return document.fileName(); }
+function fileUrl() { return document.url(); }
+function encoding() { return document.encoding(); }
+function selection() { return view.selectedText(); }
+function year() { return new Date().getFullYear(); }
+function upper(x) { return x.toUpperCase(); }
+function lower(x) { return x.toLowerCase(); }
+</script>
+ <item>
+  <match>css</match>
+  <fillin>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenujs/dist/metismenujs.min.css">
+${cursor}</fillin>
+ </item>
+ <item>
+  <match>js:src</match>
+  <fillin>&lt;script src="https://cdn.jsdelivr.net/npm/metismenujs/dist/metismenujs.min.js">&lt;/script>
+${cursor}</fillin>
+ </item>
+ <item>
+  <match>js:init</match>
+  <fillin>&lt;script>
+  const mmmenu = document.getElementById("${menu}")
+  const mm = new MetisMenu(mmmenu, {
+    toggle: ${true}
+  });
+&lt;/script>${cursor}
+</fillin>
+ </item>
+ <item>
+  <match>menu</match>
+  <fillin>&lt;ul id="${menu}" class="metismenu">
+  ${cursor}
+&lt;/ul></fillin>
+ </item>
+ <item>
+  <match>list:active</match>
+  <fillin>&lt;li class="mm-active">
+  &lt;a href="#" class="has-arrow" aria-expanded="true">${Opened Menu}&lt;/a>
+  &lt;ul class="mm-collapse mm-show">
+    &lt;li>&lt;a href="#">${item 3}&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">${item 4}&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/li>
+${cursor}</fillin>
+ </item>
+ <item>
+  <match>list</match>
+  <fillin>&lt;li>
+  &lt;a href="#" class="has-arrow" aria-expanded="false">${Closed Menu}&lt;/a>
+  &lt;ul>
+    &lt;li>&lt;a href="#">${item 3}&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">${item 4}&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/li>
+${cursor}</fillin>
+ </item>
+</snippets>
