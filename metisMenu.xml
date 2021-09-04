@@ -1,4 +1,4 @@
-<snippets authors="Osman Nuri Okumuş" namespace="mm" filetypes="HTML" license="BSD" name="MetisMenu Snippets">
+<snippets authors="Osman Nuri Okumuş" namespace="mm" filetypes="HTML" license="GPLv3" name="MetisMenu Snippets">
  <script>function fileName() { return document.fileName(); }
 function fileUrl() { return document.url(); }
 function encoding() { return document.encoding(); }
