@@ -1,0 +1,81 @@
+<snippets namespace="hs" filetypes="HTML" license="GPLv3" name="HTML Snippets" authors="Osman Nuri Okumuş">
+ <script>function fileName() { return document.fileName(); }
+function fileUrl() { return document.url(); }
+function encoding() { return document.encoding(); }
+function selection() { return view.selectedText(); }
+function year() { return new Date().getFullYear(); }
+function upper(x) { return x.toUpperCase(); }
+function lower(x) { return x.toLowerCase(); }
+</script>
+ <item>
+  <match>div</match>
+  <fillin>&lt;div>
+${cursor}
+&lt;/div></fillin>
+ </item>
+ <item>
+  <match>h1</match>
+  <fillin>&lt;h1>${cursor}&lt;/h1></fillin>
+ </item>
+ <item>
+  <match>div:class</match>
+  <fillin>&lt;div class="${field_name='class'}">
+${cursor}
+&lt;/div></fillin>
+ </item>
+ <item>
+  <match>div:id</match>
+  <fillin>&lt;div id="${field_name='id'}">
+${cursor}
+&lt;/div></fillin>
+ </item>
+ <item>
+  <match>ul</match>
+  <fillin>&lt;ul>
+&lt;li>${cursor}&lt;/li>
+&lt;/ul></fillin>
+ </item>
+ <item>
+  <match>h2</match>
+  <fillin>&lt;h2>${cursor}&lt;/h2></fillin>
+ </item>
+ <item>
+  <match>link</match>
+  <fillin>&lt;link rel="stylesheet" href="${field_name=''}.css">
+${cursor}</fillin>
+ </item>
+ <item>
+  <match>script</match>
+  <fillin>&lt;script type="text/javascript">
+${cursor}
+&lt;/script></fillin>
+ </item>
+ <item>
+  <match>script:src</match>
+  <fillin>&lt;script src="${field_name=''}" charset="utf-8">&lt;/script>
+${cursor}</fillin>
+ </item>
+ <item>
+  <match>meta:utf-8</match>
+  <fillin>&lt;meta charset="utf-8">
+${cursor}</fillin>
+ </item>
+ <item>
+  <match>title</match>
+  <fillin>&lt;title>${field_name='Home'}&lt;/title>
+${cursor}</fillin>
+ </item>
+ <item>
+  <match>html</match>
+  <fillin>&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;meta charset="utf-8">
+    &lt;title>${Home}&lt;/title>
+  &lt;/head>
+  &lt;body>
+    ${cursor}
+  &lt;/body>
+&lt;/html></fillin>
+ </item>
+</snippets>
