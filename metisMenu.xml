@@ -20,8 +20,8 @@ ${cursor}</fillin>
  <item>
   <match>js:init</match>
   <fillin>&lt;script>
-  const mmmenu = document.getElementById("${menu}")
-  const mm = new MetisMenu(mmmenu, {
+  const ${mmmenu} = document.getElementById("${menu}")
+  const mm = new MetisMenu(${mmmenu}, {
     toggle: ${true}
   });
 &lt;/script>${cursor}
